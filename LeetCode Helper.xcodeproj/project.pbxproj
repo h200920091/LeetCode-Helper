@@ -14,6 +14,9 @@
 		79CCE8C22AA2F60F00B0F2D2 /* LeetCode_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8C12AA2F60F00B0F2D2 /* LeetCode_HelperTests.swift */; };
 		79CCE8CC2AA2F60F00B0F2D2 /* LeetCode_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8CB2AA2F60F00B0F2D2 /* LeetCode_HelperUITests.swift */; };
 		79CCE8CE2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8CD2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift */; };
+		79CCE8DE2AA2FE0200B0F2D2 /* leetcode_questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */; };
+		79CCE8E02AA2FEA500B0F2D2 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8DF2AA2FEA500B0F2D2 /* Problem.swift */; };
+		79CCE8E22AA3054500B0F2D2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8E12AA3054500B0F2D2 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		79CCE8C72AA2F60F00B0F2D2 /* LeetCode HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LeetCode HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CCE8CB2AA2F60F00B0F2D2 /* LeetCode_HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode_HelperUITests.swift; sourceTree = "<group>"; };
 		79CCE8CD2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode_HelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leetcode_questions.json; sourceTree = "<group>"; };
+		79CCE8DF2AA2FEA500B0F2D2 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		79CCE8E12AA3054500B0F2D2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				79CCE8AF2AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift */,
-				79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */,
+				79CCE8DA2AA2FBEA00B0F2D2 /* Views */,
+				79CCE8DB2AA2FC2A00B0F2D2 /* Models */,
+				79CCE8DC2AA2FDC200B0F2D2 /* Resources */,
 				79CCE8B32AA2F60E00B0F2D2 /* Assets.xcassets */,
 				79CCE8B52AA2F60E00B0F2D2 /* LeetCode_Helper.entitlements */,
 				79CCE8B62AA2F60E00B0F2D2 /* Preview Content */,
@@ -127,6 +135,31 @@
 				79CCE8CD2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift */,
 			);
 			path = "LeetCode HelperUITests";
+			sourceTree = "<group>";
+		};
+		79CCE8DA2AA2FBEA00B0F2D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79CCE8DB2AA2FC2A00B0F2D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79CCE8DF2AA2FEA500B0F2D2 /* Problem.swift */,
+				79CCE8E12AA3054500B0F2D2 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79CCE8DC2AA2FDC200B0F2D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CCE8DE2AA2FE0200B0F2D2 /* leetcode_questions.json in Resources */,
 				79CCE8B82AA2F60E00B0F2D2 /* Preview Assets.xcassets in Resources */,
 				79CCE8B42AA2F60E00B0F2D2 /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CCE8B22AA2F60D00B0F2D2 /* ContentView.swift in Sources */,
+				79CCE8E22AA3054500B0F2D2 /* ModelData.swift in Sources */,
+				79CCE8E02AA2FEA500B0F2D2 /* Problem.swift in Sources */,
 				79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
