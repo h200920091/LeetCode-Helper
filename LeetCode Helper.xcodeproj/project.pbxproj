@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7928A03A2AA44EA10034CED4 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928A0392AA44EA10034CED4 /* ProblemRow.swift */; };
+		7928A03C2AA500000034CED4 /* problemsetQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = 7928A03B2AA500000034CED4 /* problemsetQuestionList.json */; };
 		79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8AF2AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift */; };
 		79CCE8B22AA2F60D00B0F2D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */; };
 		79CCE8B42AA2F60E00B0F2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CCE8B32AA2F60E00B0F2D2 /* Assets.xcassets */; };
@@ -15,8 +17,7 @@
 		79CCE8CC2AA2F60F00B0F2D2 /* LeetCode_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8CB2AA2F60F00B0F2D2 /* LeetCode_HelperUITests.swift */; };
 		79CCE8CE2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8CD2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift */; };
 		79CCE8DE2AA2FE0200B0F2D2 /* leetcode_questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */; };
-		79CCE8E02AA2FEA500B0F2D2 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8DF2AA2FEA500B0F2D2 /* Problem.swift */; };
-		79CCE8E22AA3054500B0F2D2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8E12AA3054500B0F2D2 /* ModelData.swift */; };
+		79CCE8E02AA2FEA500B0F2D2 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8DF2AA2FEA500B0F2D2 /* QuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7928A0392AA44EA10034CED4 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
+		7928A03B2AA500000034CED4 /* problemsetQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = problemsetQuestionList.json; sourceTree = "<group>"; };
 		79CCE8AC2AA2F60D00B0F2D2 /* LeetCode Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CCE8AF2AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode_HelperApp.swift; sourceTree = "<group>"; };
 		79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,8 +52,7 @@
 		79CCE8CB2AA2F60F00B0F2D2 /* LeetCode_HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode_HelperUITests.swift; sourceTree = "<group>"; };
 		79CCE8CD2AA2F60F00B0F2D2 /* LeetCode_HelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode_HelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leetcode_questions.json; sourceTree = "<group>"; };
-		79CCE8DF2AA2FEA500B0F2D2 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
-		79CCE8E12AA3054500B0F2D2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		79CCE8DF2AA2FEA500B0F2D2 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */,
+				7928A0392AA44EA10034CED4 /* ProblemRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,8 +151,7 @@
 		79CCE8DB2AA2FC2A00B0F2D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				79CCE8DF2AA2FEA500B0F2D2 /* Problem.swift */,
-				79CCE8E12AA3054500B0F2D2 /* ModelData.swift */,
+				79CCE8DF2AA2FEA500B0F2D2 /* QuestionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 		79CCE8DC2AA2FDC200B0F2D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7928A03B2AA500000034CED4 /* problemsetQuestionList.json */,
 				79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */,
 			);
 			path = Resources;
@@ -266,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7928A03C2AA500000034CED4 /* problemsetQuestionList.json in Resources */,
 				79CCE8DE2AA2FE0200B0F2D2 /* leetcode_questions.json in Resources */,
 				79CCE8B82AA2F60E00B0F2D2 /* Preview Assets.xcassets in Resources */,
 				79CCE8B42AA2F60E00B0F2D2 /* Assets.xcassets in Resources */,
@@ -294,8 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CCE8B22AA2F60D00B0F2D2 /* ContentView.swift in Sources */,
-				79CCE8E22AA3054500B0F2D2 /* ModelData.swift in Sources */,
-				79CCE8E02AA2FEA500B0F2D2 /* Problem.swift in Sources */,
+				7928A03A2AA44EA10034CED4 /* ProblemRow.swift in Sources */,
+				79CCE8E02AA2FEA500B0F2D2 /* QuestionModel.swift in Sources */,
 				79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
