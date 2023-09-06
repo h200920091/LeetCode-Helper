@@ -20,6 +20,7 @@
 		79CCE8E02AA2FEA500B0F2D2 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8DF2AA2FEA500B0F2D2 /* QuestionModel.swift */; };
 		79D1006A2AA833160046D5C2 /* ProblemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D100692AA833160046D5C2 /* ProblemList.swift */; };
 		79D1006C2AA836490046D5C2 /* ProblemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1006B2AA836490046D5C2 /* ProblemDetail.swift */; };
+		79D1006E2AA846490046D5C2 /* ProblemCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1006D2AA846490046D5C2 /* ProblemCardRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		79CCE8DF2AA2FEA500B0F2D2 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		79D100692AA833160046D5C2 /* ProblemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemList.swift; sourceTree = "<group>"; };
 		79D1006B2AA836490046D5C2 /* ProblemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetail.swift; sourceTree = "<group>"; };
+		79D1006D2AA846490046D5C2 /* ProblemCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemCardRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				7928A0392AA44EA10034CED4 /* ProblemRow.swift */,
 				79D100692AA833160046D5C2 /* ProblemList.swift */,
 				79D1006B2AA836490046D5C2 /* ProblemDetail.swift */,
+				79D1006D2AA846490046D5C2 /* ProblemCardRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				79D1006A2AA833160046D5C2 /* ProblemList.swift in Sources */,
 				79CCE8B22AA2F60D00B0F2D2 /* ContentView.swift in Sources */,
 				79D1006C2AA836490046D5C2 /* ProblemDetail.swift in Sources */,
+				79D1006E2AA846490046D5C2 /* ProblemCardRow.swift in Sources */,
 				7928A03A2AA44EA10034CED4 /* ProblemRow.swift in Sources */,
 				79CCE8E02AA2FEA500B0F2D2 /* QuestionModel.swift in Sources */,
 				79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */,

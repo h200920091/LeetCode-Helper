@@ -14,8 +14,23 @@ struct ProblemList: View {
                 NavigationLink {
                     ProblemDetail(question: question)
                 } label: {
-                    QuestionRow(question: question)
+                    ProblemCardRow(question: question)
                 }
+//                .listRowBackground(Color.white)
+                .listRowSeparator(.hidden)
+                .listRowBackground(
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(.white)
+                        .background(.clear)
+                        .padding(
+                            EdgeInsets(
+                                top: 2,
+                                leading: 10,
+                                bottom: 2,
+                                trailing: 10
+                            )
+                        )
+                )
             }
             .navigationTitle("Problems")
         }
