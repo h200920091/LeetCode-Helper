@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct TopicTag: Codable, Hashable {
+struct TopicTag: Codable, Hashable, Identifiable{
     let name: String
     let id: String
     let slug: String
 }
 
-struct Question: Codable, Hashable {
+struct Question: Codable, Hashable{
     let acRate: Double
     let difficulty: String
     let frontendQuestionId: String
@@ -27,16 +27,16 @@ struct Question: Codable, Hashable {
     let hasVideoSolution: Bool
 }
 
-struct ProblemsetQuestionList: Codable, Hashable {
+struct ProblemsetQuestionList: Codable, Hashable{
     let total: Int
     let questions: [Question]
 }
 
-struct responseData: Codable, Hashable {
+struct responseData: Codable, Hashable{
     let problemsetQuestionList: ProblemsetQuestionList
 }
 
-struct ResponseData: Codable, Hashable {
+struct ResponseData: Codable, Hashable{
     let data: responseData
 }
 

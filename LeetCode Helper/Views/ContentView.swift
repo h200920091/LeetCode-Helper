@@ -9,33 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("1. Two Sum")
-                .font(.title)
-            HStack {
-                Text("https://leetcode.com/problems/two-sum/")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-            Divider()
-           
-            HStack {
-                Text("Tags")
-                Text("Difficulty")
-            }
-            .font(.subheadline)
-            .foregroundColor(.secondary)
-            
-            Divider()
-            
-            HStack {
-                Text("Problem Description")
-            }
-            
-        }
-        .padding()
-        
-        Spacer()
+        ProblemList()
     }
 }
 
