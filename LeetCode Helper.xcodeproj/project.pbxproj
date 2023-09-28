@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7928A03A2AA44EA10034CED4 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928A0392AA44EA10034CED4 /* ProblemRow.swift */; };
 		7928A03C2AA500000034CED4 /* problemsetQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = 7928A03B2AA500000034CED4 /* problemsetQuestionList.json */; };
+		797235A82AC4A46300031890 /* ProblemHtmlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797235A72AC4A46300031890 /* ProblemHtmlView.swift */; };
 		79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8AF2AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift */; };
 		79CCE8B22AA2F60D00B0F2D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */; };
 		79CCE8B42AA2F60E00B0F2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CCE8B32AA2F60E00B0F2D2 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		7928A0392AA44EA10034CED4 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
 		7928A03B2AA500000034CED4 /* problemsetQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = problemsetQuestionList.json; sourceTree = "<group>"; };
+		797235A72AC4A46300031890 /* ProblemHtmlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemHtmlView.swift; sourceTree = "<group>"; };
 		79CCE8AC2AA2F60D00B0F2D2 /* LeetCode Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CCE8AF2AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode_HelperApp.swift; sourceTree = "<group>"; };
 		79CCE8B12AA2F60D00B0F2D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				79D100692AA833160046D5C2 /* ProblemList.swift */,
 				79D1006B2AA836490046D5C2 /* ProblemDetail.swift */,
 				79D1006D2AA846490046D5C2 /* ProblemCardRow.swift */,
+				797235A72AC4A46300031890 /* ProblemHtmlView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D1006A2AA833160046D5C2 /* ProblemList.swift in Sources */,
+				797235A82AC4A46300031890 /* ProblemHtmlView.swift in Sources */,
 				79CCE8B22AA2F60D00B0F2D2 /* ContentView.swift in Sources */,
 				79D1006C2AA836490046D5C2 /* ProblemDetail.swift in Sources */,
 				79D1006E2AA846490046D5C2 /* ProblemCardRow.swift in Sources */,
@@ -464,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "LeetCode Helper/LeetCode_Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeetCode Helper/Preview Content\"";
@@ -488,6 +493,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zhhao.LeetCode-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -502,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "LeetCode Helper/LeetCode_Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeetCode Helper/Preview Content\"";
@@ -526,6 +533,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zhhao.LeetCode-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
