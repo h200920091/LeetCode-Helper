@@ -59,7 +59,6 @@ func sendGraphQLRequest(titleSlug: String ,completion: @escaping (String?) -> Vo
                    let questionDict = dataDict["question"] as? [String: Any],
                    let content = questionDict["content"] as? String {
                     // Handle the JSON response from GraphQL here
-                    print(content)
                     completion(content) // 调用闭包并传递 content 值
                 } else {
                     print("Failed to parse JSON response")

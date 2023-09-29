@@ -11,6 +11,7 @@ import WebKit
 struct HTMLView: View {
     let htmlContent: String
     var question: Question
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -52,13 +53,12 @@ struct HTMLView: View {
             
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
             .font(.subheadline)
-            .foregroundColor(.secondary)
+//            .foregroundColor(.secondary)
             
             Divider()
             WebView(htmlContent: htmlContent)
                 .frame(maxWidth: .infinity)
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
-            
         }
     }
     
@@ -78,7 +78,8 @@ struct HTMLView: View {
 
 struct WebView: UIViewRepresentable {
     let htmlContent: String
-
+    @Environment(\.colorScheme) var colorScheme
+    
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
         return webView
@@ -86,15 +87,33 @@ struct WebView: UIViewRepresentable {
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
         if let url = URL(string: "about:blank") {
-            uiView.loadHTMLString(htmlContent, baseURL: url)
+            let htmlContentWithBackgroundColor = """
+            <html>
+            <head>
+            <style>
+              body {
+                background-color: \(colorScheme == .dark ? "black" : "white");
+                color: \(colorScheme == .dark ? "white" : "black"); /* 设置文本颜色 */
+              }
+            </style>
+            </head>
+            <body>
+            \(htmlContent)
+            </body>
+            </html>
+            """
+            uiView.loadHTMLString(htmlContentWithBackgroundColor, baseURL: url)
         }
     }
+
+
+
 }
 
 struct ProblemHtmlView: View {
     var question: Question
     @State private var htmlContent: String = ""
-    
+
     var body: some View {
 //        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         
@@ -105,13 +124,28 @@ struct ProblemHtmlView: View {
         .onAppear {
             sendGraphQLRequest(titleSlug: question.titleSlug) { content in
                             if let content = content {
-                                print(content)
                                 self.htmlContent = content // 更新 @State 中的 htmlContent
                             } else {
                                 print("Failed to fetch HTML content")
                             }
                         }
         }
+    }
+}
+
+extension Color {
+    func toHexString() -> String {
+        let components = self.cgColor?.components
+        
+        guard let red = components?[0], let green = components?[1], let blue = components?[2] else {
+            return ""
+        }
+        
+        let redInt = Int(red * 255.0)
+        let greenInt = Int(green * 255.0)
+        let blueInt = Int(blue * 255.0)
+        
+        return String(format: "#%02X%02X%02X", redInt, greenInt, blueInt)
     }
 }
 

@@ -10,6 +10,7 @@ import SwiftUI
 struct ProblemList: View {
     @State private var searchText = ""
     @State var isShowingSuggestions = false
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
@@ -22,7 +23,7 @@ struct ProblemList: View {
                 .listRowSeparator(.hidden)
                 .listRowBackground(
                     RoundedRectangle(cornerRadius: 5)
-                        .foregroundColor(.white)
+                        .foregroundColor(colorScheme == .dark ? Color.black.opacity(0.25) : Color.white)
                         .background(.clear)
                         .shadow(color: .gray, radius: 3, x: 2, y: 2)
                         .padding(
