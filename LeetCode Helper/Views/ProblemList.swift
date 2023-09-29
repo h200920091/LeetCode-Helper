@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProblemList: View {
     @State private var searchText = ""
+    @AppStorage("isDarkMode") var isDarkMode = false
     @State var isShowingSuggestions = false
     @Environment(\.colorScheme) var colorScheme
     
@@ -40,17 +41,17 @@ struct ProblemList: View {
             .searchable(text: $searchText)
             .toolbar {
                 Button(action: {
-                    // Call your refresh action here by invoking getAllQuestions
-                    getAllQuestions { result in
-                        switch result {
-                        case .success:
-                            let _ = print("Update Successfully.")
-                        case .failure(let error):
-                            print("Error: \(error)")
-                        }
-                    }
+                    isDarkMode.toggle()
+//                    getAllQuestions { result in
+//                        switch result {
+//                        case .success:
+//                            let _ = print("Update Successfully.")
+//                        case .failure(let error):
+//                            print("Error: \(error)")
+//                        }
+//                    }
                 }) {
-                    Image(systemName: "arrow.clockwise.circle")
+                    Image(systemName: "moon")
                 }
             }
         }

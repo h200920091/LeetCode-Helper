@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct LeetCode_HelperApp: App {
+    @AppStorage("isDarkMode") var isDarkMode = false
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
