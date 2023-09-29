@@ -13,24 +13,66 @@ struct HTMLView: View {
     var question: Question
     
     var body: some View {
-        HStack {
-            let titleSlug = "https://leetcode.com/problems/" + question.titleSlug + "/"
-            Text(titleSlug)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
+        VStack(alignment: .leading, spacing: 8) {
+            Text(question.title)
+                .font(.title2)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+            
+            Divider()
+            
+            HStack {
+                Text(question.difficulty)
+                    .foregroundColor(difficultyColor(for: question.difficulty))
+                    .font(.system(size: 9))
+                    .lineLimit(1) // Limit to one line
+                    .truncationMode(.tail) // Truncate with ...
+                    .padding(.horizontal, 6) // Add horizontal padding
+                    .padding(.vertical, 2) // Add vertical padding
+                    .background(Color.gray.opacity(0.2)) // Gray background
+                    .cornerRadius(10) // Rounded corners
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 4) {
+                        ForEach(question.topicTags, id: \.id) { tag in
+                            Text(tag.name)
+//                                .foregroundStyle(.black)
+                                .font(.system(size: 9))
+                                .lineLimit(1) // Limit to one line
+                                .truncationMode(.tail) // Truncate with ...
+                                .padding(.horizontal, 6) // Add horizontal padding
+                                .padding(.vertical, 2) // Add vertical padding
+                                .background(Color.gray.opacity(0.2)) // Gray background
+                                .cornerRadius(10) // Rounded corners
+                        }
+                    }
+                }
+            }
+            
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
+            .font(.subheadline)
+            .foregroundColor(.secondary)
+            
+            Divider()
+            WebView(htmlContent: htmlContent)
+                .frame(maxWidth: .infinity)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
+            
         }
-        Divider()
-        
-        HStack {
-            Text("Tags")
-            Text("Difficulty")
+    }
+    
+    func difficultyColor(for difficulty: String) -> Color {
+        switch difficulty {
+        case "Easy":
+            return .green
+        case "Medium":
+            return .orange
+        case "Hard":
+            return .red
+        default:
+            return .gray // Default color for unknown difficulty
         }
-        .font(.subheadline)
-        .foregroundColor(.secondary)
-        
-        Divider()
-        WebView(htmlContent: htmlContent)
-                        .frame(maxWidth: .infinity)
     }
 }
 
