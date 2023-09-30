@@ -14,53 +14,66 @@ struct HTMLView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(question.title)
-                .font(.title2)
-                .bold()
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
-            
-            Divider()
-            
-            HStack {
-                Text(question.difficulty)
-                    .foregroundColor(difficultyColor(for: question.difficulty))
-                    .font(.system(size: 9))
-                    .lineLimit(1) // Limit to one line
-                    .truncationMode(.tail) // Truncate with ...
-                    .padding(.horizontal, 6) // Add horizontal padding
-                    .padding(.vertical, 2) // Add vertical padding
-                    .background(Color.gray.opacity(0.2)) // Gray background
-                    .cornerRadius(10) // Rounded corners
+        NavigationView {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(question.frontendQuestionId + ".  " + question.title)
+                    .font(.title2)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 4) {
-                        ForEach(question.topicTags, id: \.id) { tag in
-                            Text(tag.name)
-//                                .foregroundStyle(.black)
-                                .font(.system(size: 9))
-                                .lineLimit(1) // Limit to one line
-                                .truncationMode(.tail) // Truncate with ...
-                                .padding(.horizontal, 6) // Add horizontal padding
-                                .padding(.vertical, 2) // Add vertical padding
-                                .background(Color.gray.opacity(0.2)) // Gray background
-                                .cornerRadius(10) // Rounded corners
+                Divider()
+                
+                HStack {
+                    Text(question.difficulty)
+                        .foregroundColor(difficultyColor(for: question.difficulty))
+                        .font(.system(size: 9))
+                        .lineLimit(1) // Limit to one line
+                        .truncationMode(.tail) // Truncate with ...
+                        .padding(.horizontal, 6) // Add horizontal padding
+                        .padding(.vertical, 2) // Add vertical padding
+                        .background(Color.gray.opacity(0.2)) // Gray background
+                        .cornerRadius(10) // Rounded corners
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 4) {
+                            ForEach(question.topicTags, id: \.id) { tag in
+                                Text(tag.name)
+                                //                                .foregroundStyle(.black)
+                                    .font(.system(size: 9))
+                                    .lineLimit(1) // Limit to one line
+                                    .truncationMode(.tail) // Truncate with ...
+                                    .padding(.horizontal, 6) // Add horizontal padding
+                                    .padding(.vertical, 2) // Add vertical padding
+                                    .background(Color.gray.opacity(0.2)) // Gray background
+                                    .cornerRadius(10) // Rounded corners
+                            }
                         }
                     }
                 }
-            }
-            
-            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
-            .font(.subheadline)
-//            .foregroundColor(.secondary)
-            
-            Divider()
-            WebView(htmlContent: htmlContent)
-                .frame(maxWidth: .infinity)
+                
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
+                .font(.subheadline)
+                
+                
+                Divider()
+                WebView(htmlContent: htmlContent)
+                    .frame(maxWidth: .infinity)
+                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 5))
+            }
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    // Handle "Add To Notion" button action here
+                }) {
+                    Text("Add To Notion")
+                }
+            }
+        }
+        
     }
+    
     
     func difficultyColor(for difficulty: String) -> Color {
         switch difficulty {
