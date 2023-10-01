@@ -209,11 +209,7 @@ func saveDataToFile(questions: [Question]) throws {
     
     do {
         let jsonData = try encoder.encode(questions)
-        
-        // 获取应用程序沙盒的 Documents 目录
         let documentsDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-        
-        // 指定要保存的文件路径
         let fileURL = documentsDirectory.appendingPathComponent("problemsetQuestionList.json")
         
         try jsonData.write(to: fileURL)

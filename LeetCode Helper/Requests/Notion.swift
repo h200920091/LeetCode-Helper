@@ -20,7 +20,6 @@ func Notion(question: Question) {
             let decoder = JSONDecoder()
             let pageProperties = try decoder.decode(PageProperties.self, from: jsonData)
             
-            // 打印解码后的 PageProperties 实例
             print(pageProperties)
             
             let difficultyInfo = findDifficultyProperties(for: question.difficulty, in: pageProperties)
