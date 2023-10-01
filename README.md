@@ -12,6 +12,13 @@ So I developed an app to help me do that!
 </div>
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnZpbjc0a2s1bzdvcnRzcjQ2NG5wY2JpY3VobmdjYm5wcnptbXF3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mgEqVNdQrNMgnjHirh/giphy.gif" alt="Demo of LeetCode Notion Helper" width="500">
 
+## To Do
+- Handle tags not seen before
+- Modifiable Notion API Key
+- Be able to update problemset.json
+- Automatically update previous submissions
+- ...
+
 ## Dependencies
 
 - **[NotionSwift](https://github.com/chojnac/NotionSwift)**: Notion Swift API. I use this API to update Notion.
