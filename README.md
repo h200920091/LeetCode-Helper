@@ -10,7 +10,7 @@ So I developed an app to help me do that!
   <img src="https://i.imgur.com/T4oUH2E.png" alt="Light Mode" width="300">
   <img src="https://i.imgur.com/8zRNRL1.jpg" alt="Dark Mode" width="300">
 </div>
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnZpbjc0a2s1bzdvcnRzcjQ2NG5wY2JpY3VobmdjYm5wcnptbXF3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mgEqVNdQrNMgnjHirh/giphy.gif" alt="Demo of LeetCode Notion Helper" width="500">
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnZpbjc0a2s1bzdvcnRzcjQ2NG5wY2JpY3VobmdjYm5wcnptbXF3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mgEqVNdQrNMgnjHirh/giphy.gif" alt="Demo of LeetCode Notion Helper" width="700">
 
 ## To Do
 - Handle tags not seen before
