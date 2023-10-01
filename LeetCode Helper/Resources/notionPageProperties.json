@@ -1,0 +1,278 @@
+{
+  "Difficulty": [
+    {
+      "ID": "4cb93933-e6b7-4e07-995b-4b667920d8f4",
+      "Name": "Easy",
+      "Color": "green"
+    },
+    {
+      "ID": "dd7ed6af-b77b-4238-851c-c5f299409749",
+      "Name": "Medium",
+      "Color": "yellow"
+    },
+    {
+      "ID": "24fe9715-eee0-42c9-bab8-2070d19b5e1d",
+      "Name": "Hard",
+      "Color": "red"
+    }
+  ],
+  "Tag": [
+    {
+      "ID": "a1abcc60-d854-4b7c-95b9-8835f15a5803",
+      "Name": "Backtrace",
+      "Color": "red"
+    },
+    {
+      "ID": "62aab74b-bf71-4fe2-abfd-928aeff3261a",
+      "Name": "Binary Search",
+      "Color": "red"
+    },
+    {
+      "ID": "f9f1a553-4fe1-44e9-8f7f-07949f6ef6c2",
+      "Name": "Binary Tree",
+      "Color": "green"
+    },
+    {
+      "ID": "6dca9f77-d8d0-49eb-a2f8-f8ada436688d",
+      "Name": "DFS-Preorder",
+      "Color": "red"
+    },
+    {
+      "ID": "e514a3c2-df58-4e19-9a20-a061c3bcade3",
+      "Name": "DFS-Inorder",
+      "Color": "red"
+    },
+    {
+      "ID": "f9596b8a-5094-42d2-a86c-5389db0b8454",
+      "Name": "DFS-Postorder",
+      "Color": "red"
+    },
+    {
+      "ID": "1ff98ad6-5f99-46fc-90cb-62d156f99dba",
+      "Name": "HashMap",
+      "Color": "pink"
+    },
+    {
+      "ID": "57cac971-d26f-42dd-a927-a21fe27c7dd8",
+      "Name": "Recursion",
+      "Color": "green"
+    },
+    {
+      "ID": "146666c5-655f-4fde-b749-d198894dde94",
+      "Name": "Design",
+      "Color": "red"
+    },
+    {
+      "ID": "bb430190-2fd3-4f98-ad7b-22f1478e80a0",
+      "Name": "Serialization",
+      "Color": "orange"
+    },
+    {
+      "ID": "266fbec1-df9f-4d84-9120-1b6c50cfe619",
+      "Name": "Mark Index",
+      "Color": "green"
+    },
+    {
+      "ID": "93c5bd61-0836-4718-b68c-31b516ccb96f",
+      "Name": "Memo",
+      "Color": "brown"
+    },
+    {
+      "ID": "42ac5b2c-1ef5-41a6-823b-d5687db519d1",
+      "Name": "Array",
+      "Color": "default"
+    },
+    {
+      "ID": "8a85236a-24d4-4b98-accc-54ef1d8678e7",
+      "Name": "Two Pointers",
+      "Color": "gray"
+    },
+    {
+      "ID": "cf5f523e-4e0a-4561-bebb-ea05ea2f51b0",
+      "Name": "Sliding Window",
+      "Color": "blue"
+    },
+    {
+      "ID": "8b77e761-b832-4254-889c-842e662a4fb2",
+      "Name": "Interactive",
+      "Color": "purple"
+    },
+    {
+      "ID": "ff408901-07e6-4453-8374-b3ebcc583410",
+      "Name": "Sorting",
+      "Color": "yellow"
+    },
+    {
+      "ID": "d4a7f422-f1b1-4b9a-a9a7-20be9af29d80",
+      "Name": "Math",
+      "Color": "purple"
+    },
+    {
+      "ID": "9d0de448-056d-40b1-b9b8-ce1a6b1dd473",
+      "Name": "String",
+      "Color": "purple"
+    },
+    {
+      "ID": "c0b4d694-a53e-46c0-b927-ac0b1db7d501",
+      "Name": "Linked List",
+      "Color": "gray"
+    },
+    {
+      "ID": "2e6eed90-461a-4ea6-ae42-4485f6c072ec",
+      "Name": "Hash Table",
+      "Color": "gray"
+    },
+    {
+      "ID": "e9c93d4d-d332-4520-b215-b89fcd937205",
+      "Name": "Depth-First Search",
+      "Color": "red"
+    },
+    {
+      "ID": "8d112da1-a68d-4a6d-8ab5-20af4ef41af3",
+      "Name": "Tree",
+      "Color": "green"
+    },
+    {
+      "ID": "19a3d71e-fec1-445e-a233-ffb04662fd2e",
+      "Name": "Dynamic Programming",
+      "Color": "default"
+    },
+    {
+      "ID": "831d6d2c-2ccb-4c88-a0ff-6b40128d43b4",
+      "Name": "Breadth-First Search",
+      "Color": "pink"
+    },
+    {
+      "ID": "2704be70-3511-445f-9b6a-8790543080d1",
+      "Name": "Backtracking",
+      "Color": "purple"
+    },
+    {
+      "ID": "7521cbb9-50d2-4cc0-99c6-6e54e579a4b7",
+      "Name": "Bit Manipulation",
+      "Color": "brown"
+    },
+    {
+      "ID": "d60f84a1-81a9-4a2f-b740-a359e2ec73c2",
+      "Name": "Divide and Conquer",
+      "Color": "yellow"
+    },
+    {
+      "ID": "e692d2ca-05c6-4330-912c-e0f7c950ad17",
+      "Name": "Matrix",
+      "Color": "orange"
+    },
+    {
+      "ID": "1599cf65-2a0e-4ed0-be8c-c1e54f5cffe2",
+      "Name": "Stack",
+      "Color": "red"
+    },
+    {
+      "ID": "07f749bc-d079-47fa-8d3e-3a75e05f7aff",
+      "Name": "Randomized",
+      "Color": "yellow"
+    },
+    {
+      "ID": "4d9a6082-5bd4-4da2-8aae-e19ac26d27d8",
+      "Name": "Counting",
+      "Color": "gray"
+    },
+    {
+      "ID": "588044af-db75-40dd-878e-3d2c2063fe70",
+      "Name": "Greedy",
+      "Color": "gray"
+    },
+    {
+      "ID": "c0fecfb6-6f3c-4230-842b-2b709f96f843",
+      "Name": "Prefix Sum",
+      "Color": "brown"
+    },
+    {
+      "ID": "4f6063b8-b285-4499-84f4-b97f43db948d",
+      "Name": "Counting Sort",
+      "Color": "brown"
+    },
+    {
+      "ID": "67074219-0363-42e7-a3c0-039d452246ea",
+      "Name": "Monotonic Stack",
+      "Color": "yellow"
+    },
+    {
+      "ID": "a2bf8103-7d0c-4808-adc2-dc857f25280c",
+      "Name": "Tries",
+      "Color": "blue"
+    },
+    {
+      "ID": "e3a773ba-a03f-4b43-8570-8b913b7f1b0c",
+      "Name": "Simulation",
+      "Color": "blue"
+    },
+    {
+      "ID": "4ef77aa3-da6d-431c-974c-f51571a71ad9",
+      "Name": "String Matching",
+      "Color": "orange"
+    },
+    {
+      "ID": "b2d33b6a-de74-42e1-a726-0f6dbf138949",
+      "Name": "Union Find",
+      "Color": "yellow"
+    },
+    {
+      "ID": "bc964710-c8ba-4694-a1c1-ed8bcbde7af4",
+      "Name": "Doubly-Linked List",
+      "Color": "gray"
+    },
+    {
+      "ID": "e7e8bbe7-b6cb-4de8-b062-f6d41640ef6b",
+      "Name": "Binary Search Tree",
+      "Color": "brown"
+    },
+    {
+      "ID": "de83c136-861f-40cf-937c-2f3b94d9e859",
+      "Name": "Iterator",
+      "Color": "brown"
+    },
+    {
+      "ID": "b98c8240-dad1-40cd-95aa-847f80b7d77d",
+      "Name": "Graph",
+      "Color": "gray"
+    },
+    {
+      "ID": "6c2fea38-6b5b-49e5-929f-d81420be0f7d",
+      "Name": "Shortest Path",
+      "Color": "purple"
+    }
+  ],
+  "Status": [
+    {
+      "ID": "4fa52291-e14e-4ca7-9f7c-349818ce66ab",
+      "Name": "Not started",
+      "Color": "default"
+    },
+    {
+      "ID": "a7ff2c3d-3688-40f7-acee-828faab524f1",
+      "Name": "In progress",
+      "Color": "blue"
+    },
+    {
+      "ID": "6dd3d362-a127-43bd-9259-6ecc8f102778",
+      "Name": "Done",
+      "Color": "green"
+    },
+    {
+      "ID": "61ef4cd2-e601-4f0b-9d37-31f4a67bad25",
+      "Name": "To-do",
+      "Color": "gray"
+    },
+    {
+      "ID": "b57bef85-ec3b-4f51-8502-08a4802ac9c4",
+      "Name": "In progress",
+      "Color": "blue"
+    },
+    {
+      "ID": "4a410001-5d43-4a9e-b845-a1082bb45966",
+      "Name": "Complete",
+      "Color": "green"
+    }
+  ]
+}

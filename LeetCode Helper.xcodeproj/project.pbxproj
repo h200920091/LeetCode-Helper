@@ -10,6 +10,9 @@
 		7928A03A2AA44EA10034CED4 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928A0392AA44EA10034CED4 /* ProblemRow.swift */; };
 		7928A03C2AA500000034CED4 /* problemsetQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = 7928A03B2AA500000034CED4 /* problemsetQuestionList.json */; };
 		796D55092AC767F7002B76F0 /* Notion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D55082AC767F7002B76F0 /* Notion.swift */; };
+		796D554D2AC8BFC9002B76F0 /* notionPageProperties.json in Resources */ = {isa = PBXBuildFile; fileRef = 796D554C2AC8BFC9002B76F0 /* notionPageProperties.json */; };
+		796D55502AC8BFFB002B76F0 /* NotionSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 796D554F2AC8BFFB002B76F0 /* NotionSwift */; };
+		796D55522AC8C924002B76F0 /* propertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D55512AC8C924002B76F0 /* propertyModel.swift */; };
 		797235A82AC4A46300031890 /* ProblemHtmlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797235A72AC4A46300031890 /* ProblemHtmlView.swift */; };
 		797235AA2AC697E100031890 /* GraphQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797235A92AC697E100031890 /* GraphQL.swift */; };
 		79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE8AF2AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift */; };
@@ -47,6 +50,8 @@
 		7928A0392AA44EA10034CED4 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
 		7928A03B2AA500000034CED4 /* problemsetQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = problemsetQuestionList.json; sourceTree = "<group>"; };
 		796D55082AC767F7002B76F0 /* Notion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notion.swift; sourceTree = "<group>"; };
+		796D554C2AC8BFC9002B76F0 /* notionPageProperties.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = notionPageProperties.json; sourceTree = "<group>"; };
+		796D55512AC8C924002B76F0 /* propertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyModel.swift; sourceTree = "<group>"; };
 		797235A72AC4A46300031890 /* ProblemHtmlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemHtmlView.swift; sourceTree = "<group>"; };
 		797235A92AC697E100031890 /* GraphQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.swift; sourceTree = "<group>"; };
 		79CCE8AC2AA2F60D00B0F2D2 /* LeetCode Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796D55502AC8BFFB002B76F0 /* NotionSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				79CCE8DF2AA2FEA500B0F2D2 /* QuestionModel.swift */,
+				796D55512AC8C924002B76F0 /* propertyModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 			children = (
 				7928A03B2AA500000034CED4 /* problemsetQuestionList.json */,
 				79CCE8DD2AA2FE0200B0F2D2 /* leetcode_questions.json */,
+				796D554C2AC8BFC9002B76F0 /* notionPageProperties.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -207,6 +215,9 @@
 			dependencies = (
 			);
 			name = "LeetCode Helper";
+			packageProductDependencies = (
+				796D554F2AC8BFFB002B76F0 /* NotionSwift */,
+			);
 			productName = "LeetCode Helper";
 			productReference = 79CCE8AC2AA2F60D00B0F2D2 /* LeetCode Helper.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +290,9 @@
 				Base,
 			);
 			mainGroup = 79CCE8A32AA2F60D00B0F2D2;
+			packageReferences = (
+				796D554E2AC8BFFB002B76F0 /* XCRemoteSwiftPackageReference "NotionSwift" */,
+			);
 			productRefGroup = 79CCE8AD2AA2F60D00B0F2D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +311,7 @@
 			files = (
 				7928A03C2AA500000034CED4 /* problemsetQuestionList.json in Resources */,
 				79CCE8DE2AA2FE0200B0F2D2 /* leetcode_questions.json in Resources */,
+				796D554D2AC8BFC9002B76F0 /* notionPageProperties.json in Resources */,
 				79CCE8B82AA2F60E00B0F2D2 /* Preview Assets.xcassets in Resources */,
 				79CCE8B42AA2F60E00B0F2D2 /* Assets.xcassets in Resources */,
 			);
@@ -333,6 +348,7 @@
 				7928A03A2AA44EA10034CED4 /* ProblemRow.swift in Sources */,
 				79CCE8E02AA2FEA500B0F2D2 /* QuestionModel.swift in Sources */,
 				79CCE8B02AA2F60D00B0F2D2 /* LeetCode_HelperApp.swift in Sources */,
+				796D55522AC8C924002B76F0 /* propertyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +704,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		796D554E2AC8BFFB002B76F0 /* XCRemoteSwiftPackageReference "NotionSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chojnac/NotionSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		796D554F2AC8BFFB002B76F0 /* NotionSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 796D554E2AC8BFFB002B76F0 /* XCRemoteSwiftPackageReference "NotionSwift" */;
+			productName = NotionSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79CCE8A42AA2F60D00B0F2D2 /* Project object */;
 }

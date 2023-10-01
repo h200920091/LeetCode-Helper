@@ -65,7 +65,7 @@ struct HTMLView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    // Handle "Add To Notion" button action here
+                    Notion(question: question)
                 }) {
                     Text("Add To Notion")
                 }
