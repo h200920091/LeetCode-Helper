@@ -17,6 +17,7 @@ So I developed an app to help me do that!
 - Modifiable Notion API Key
 - Be able to update problemset.json
 - Automatically update previous submissions
+- Dynamic page properties
 - ...
 
 ## Dependencies
