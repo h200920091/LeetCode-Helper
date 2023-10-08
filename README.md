@@ -18,6 +18,7 @@ So I developed an app to help me do that!
 - Be able to update problemset.json
 - Automatically update previous submissions
 - Dynamic page properties
+- Loading Icon
 - ...
 
 ## Dependencies
